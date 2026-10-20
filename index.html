@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gallery by alldaycity</title>
+    <title>open gallery by alldaycity</title>
     <meta
       name="description"
       content="An interactive virtual art gallery: walk the room, look at the paintings, and click one for its details."
@@ -12,7 +12,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <!-- link previews; no image yet, the site's address is not final -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="gallery by alldaycity" />
+    <meta property="og:title" content="open gallery by alldaycity" />
     <meta
       property="og:description"
       content="An interactive virtual art gallery: walk the room, look at the paintings, and click one for its details."
@@ -42,17 +42,33 @@
       .page-header {
         text-align: center;
       }
+      /* the wordmark: "open" in a soft grey italic, "gallery" upright and dark,
+         then a short rule and "by alldaycity" in small capitals */
       .page-title {
         margin: 0;
-        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        font-size: clamp(1.7rem, 4.5vw, 2.6rem);
         font-weight: 400;
-        letter-spacing: 0.2em;
+        line-height: 1.1;
+        letter-spacing: 0.16em;
         text-transform: lowercase;
       }
+      .page-title .wm-open {
+        font-style: italic;
+        letter-spacing: 0.1em;
+        color: #8a8a8a;
+      }
+      .page-rule {
+        width: 2.5rem;
+        height: 1px;
+        margin: 0.95rem auto 0.7rem; /* clears the descender of the "g" in gallery */
+        border: 0;
+        background: #111;
+      }
       .page-subtitle {
-        margin: 0.4rem 0 0;
-        font-size: 0.85rem;
-        letter-spacing: 0.08em;
+        margin: 0;
+        font-size: 0.8rem;
+        font-variant: small-caps;
+        letter-spacing: 0.24em;
         color: #777;
       }
       /* "by alldaycity" links back to the main site; same quiet colour, a thin
@@ -111,14 +127,15 @@
         text-align: center;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-DnvtOCM-.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Cwgt1Sn2.css">
+    <script type="module" crossorigin src="/assets/index-I3qdBUvc.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B58jltnF.css">
   </head>
   <body>
     <main class="page">
-      <!-- "gallery by alldaycity": change the name here, in the title and in og:title above -->
+      <!-- "open gallery by alldaycity": change the name here, in the title and in og:title above -->
       <header class="page-header">
-        <h1 class="page-title">gallery</h1>
+        <h1 class="page-title"><span class="wm-open">open</span> <span class="wm-gallery">gallery</span></h1>
+        <hr class="page-rule" />
         <p class="page-subtitle">by <a href="https://alldaycity.com">alldaycity</a></p>
       </header>
       <div id="app"></div>
