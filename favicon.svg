@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- a framed painting on a dark tile, matching the room's frames and cream mat -->
+  <rect width="64" height="64" rx="12" fill="#111"/>
+  <rect x="14" y="10" width="36" height="44" fill="#3e2415"/>
+  <rect x="18" y="14" width="28" height="36" fill="#f5f3ef"/>
+  <circle cx="28" cy="29" r="6" fill="#c9a05e"/>
+  <circle cx="36" cy="38" r="8" fill="#5c7882"/>
+</svg>

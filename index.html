@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <meta
+      name="description"
+      content="An interactive virtual art gallery: walk the room, look at the paintings, and click one for its details."
+    />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- link previews; no image yet, the site's address is not final -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="gallery" />
+    <meta
+      property="og:description"
+      content="An interactive virtual art gallery: walk the room, look at the paintings, and click one for its details."
+    />
+    <meta name="twitter:card" content="summary" />
+    <style>
+      html, body, #app {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #111;
+      }
+      /* shown only when javascript is off; the 3d scene cannot run without it */
+      .no-js {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        color: #f5f3ef;
+        font-family: Georgia, serif;
+        text-align: center;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-B8fy-jDJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BuhTsdzG.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript><p class="no-js">This gallery needs JavaScript to run. Please turn it on and reload.</p></noscript>
+  </body>
+</html>
